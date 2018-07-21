@@ -1,0 +1,12 @@
+FInd the branch point between rev_a and rev_b
+
+git rev-list --tags rev_a ^rev_b
+
+suppose rev_a composes of set of commits
+c1,c2,....cb,cn,cn+1,cn+2......
+and rev_b which was branched out at point b has the set of commits
+c1,c2,....cb, cm,cm+1,cm+2 ... etc
+
+THen the above command deletes the prefix c1,c2,...cb and returns cn, cn+1, cn+2 ...
+
+The commit id of the branch point cb is now just cn^1

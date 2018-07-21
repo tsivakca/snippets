@@ -1,0 +1,8 @@
+dpkg -s <installed package name>
+apt-cache show <installed package name>
+#check the output and correlate the versions to find out the distribution list (approximate)
+Now uncomment this distribution list "deb src" in /etc/apt/sources.list
+Update the current sources list using
+apt-get update
+# now we could download the source code used by
+apt-get source <installed package name>
