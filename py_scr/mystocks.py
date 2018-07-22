@@ -8,7 +8,7 @@ import time
 
 def get_url(symbol_list):
 	#print 'calling get_price for ' + symbol
-	url = 'https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols='+symbol_list+'&apikey=DBNYD5WNM68A3KRE&datatype=json'	
+	url = 'https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols='+symbol_list+'&apikey=REGISTER_TO_GET&datatype=json'	
 	fp = urllib.urlopen(url)
 	data = fp.read()
 	decoded_data = data.decode("utf8")
